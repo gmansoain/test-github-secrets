@@ -4,12 +4,12 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="cc2ddcba-2e9f-4573-bfd7-a3716d0d844c" >
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="58b418ce-b747-45bf-9b44-b2877c5a92a1" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="test-github-secretsFlow" doc:id="3d18c05d-c975-4bf4-b725-f21fe1005dd7" >
-		<http:listener doc:name="Listener" doc:id="63d21c01-e40b-4623-afb0-bb0ee9d75201" config-ref="HTTP_Listener_config" path="/test"/>
-		<set-payload value='#["It worked!"]' doc:name="Set Payload" doc:id="51ea2548-a22d-4659-a94e-368a445e1db7" />
-		<logger level="INFO" doc:name="Logger" doc:id="94ee13df-3d10-4530-8d9a-cd575f034eed" message="#[payload]"/>
+	<flow name="mainFlow" doc:id="d0a0e0bf-829a-4789-b60f-f520392aa96d" >
+		<http:listener doc:name="Listener" doc:id="451cdc59-e033-4a48-b62c-65fff64b661c" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value='#["It worked!"]' doc:name="Set Payload" doc:id="ca0e8602-4325-4aa1-8ec1-1a7ac3937d76" />
+		<logger level="INFO" doc:name="Logger" doc:id="5e5e48d8-adfe-49b1-8965-bfd96cdfd414" message="#[payload]"/>
 	</flow>
 </mule>
