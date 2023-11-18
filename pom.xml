@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fc9e3283-a489-4e88-99aa-cceea4aa5ea1</groupId>
-	<artifactId>test-github-secrets</artifactId>
+	<artifactId>mule-test-github-secrets</artifactId>
 	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
-	<name>test-github-secrets</name>
+	<name>mule-test-github-secrets</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
