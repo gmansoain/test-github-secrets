@@ -22,7 +22,7 @@ jobs:
         client_secret: ${{ secrets.ANYPOINT_PLATFORM_CLIENT_SECRET }}
         environment: ${{ vars.ENVIRONMENT }}
         target: ${{ vars.TARGET }}
-        api_id: ${{ vars.API_ID }}
+        api_id: ${{ secrets.API_ID }}
         replicas: ${{ vars.REPLICAS }}
         cores: ${{ vars.CORES }}
         api_layer: ${{ vars.API_LAYER }}
