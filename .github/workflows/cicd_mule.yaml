@@ -2,7 +2,8 @@ name: Build and Publish to Exchange
 
 # Controls when the workflow will run
 on:
-  workflow_dispatch:
+  push:
+    branches: [ dev ]
     
 jobs:
   buildAndPublishToExchange:
